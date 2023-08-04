@@ -8,6 +8,20 @@ services:
   client:
     build: ./client
     environment:
-      YOUR_API: "http://thirdparty:3000" # replace with your new API
+      YOUR_API: "http://localhost:8000" # replace with your new API
     ports:
       - "3100:3100"
+  
+  your_api:
+    build:
+      context: ./your_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./your_api:/var/www/html # Volume pour persister la base de données SQLite
+    
+    environment:
+      QUEUE_CONNECTION: database
+      DB_CONNECTION: sqlite
+      DB_DATABASE: /var/www/html/database/database.sqlite
+      APP_NAME: "DJAMO INTERVIEW"
