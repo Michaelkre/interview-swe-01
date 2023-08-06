@@ -12,25 +12,22 @@ RUN curl -sS https://getcomposer.org/installer​ | php -- \
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
-WORKDIR /var/www/html
 
+# creating sqlLite databse file
+RUN touch database/database.sqlite
+RUN chmod 777 database/database.sqlite
 # copy .env.example to .env
 COPY .env.example .env
+
+WORKDIR /var/www/html
 
 COPY . .
 
 RUN composer install
 
-# creating sqlLite databse file
-RUN touch database/database.sqlite
 RUN php artisan migrate
 RUN php artisan key:generate
 
-
-
 EXPOSE 8000
 
-# Utilisation de supervisord pour exécuter le serveur de développement et le worker de la file d'attente
-RUN apk add supervisor
-COPY supervisord.conf /etc/supervisord.conf
-CMD ["supervisord", "-n"]
+CMD ["php", "artisan", "serve", "--port=8000"]

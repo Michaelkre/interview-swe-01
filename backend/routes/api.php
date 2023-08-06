@@ -25,16 +25,21 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get("/users", function(){
 
-    $transaction = Transaction::create(
-        [
-            "id"=>rand(1, 100),
-            "status"=>"success"
-        ]
+    // $transaction = Transaction::create(
+    //     [
+    //         "id"=>rand(1, 100),
+    //         "status"=>"success"
+    //     ]
 
-    );
+    // );
+
+    $transaction = [
+                "id"=>rand(1, 100),
+                "status"=>"success"
+    ];
 
     SendTransaction::dispatch($transaction)
-    ->delay(now()->addMinutes(10));
+    ->delay(now()->addSeconds(20));
 
 
 return response()->json(["data"=>User::all(), "jobId"=>""]);

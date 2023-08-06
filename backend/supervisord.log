@@ -1,0 +1,141 @@
+2023-08-05 17:03:18,807 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-08-05 17:03:18,982 INFO supervisord started with pid 1
+2023-08-05 17:03:19,987 INFO spawned: 'create-migration' with pid 7
+2023-08-05 17:03:19,993 INFO spawned: 'create-sqlite' with pid 8
+2023-08-05 17:03:20,010 INFO spawned: 'laravel-queue' with pid 9
+2023-08-05 17:03:20,117 INFO spawned: 'laravel-server' with pid 10
+2023-08-05 17:03:20,119 WARN exited: create-sqlite (exit status 0; not expected)
+2023-08-05 17:03:21,168 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:03:21,171 INFO spawned: 'create-sqlite' with pid 11
+2023-08-05 17:03:21,172 INFO success: laravel-queue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:03:21,174 INFO success: laravel-server entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:03:21,183 WARN exited: create-sqlite (exit status 0; not expected)
+2023-08-05 17:03:23,189 INFO spawned: 'create-sqlite' with pid 12
+2023-08-05 17:03:23,202 WARN exited: create-sqlite (exit status 0; not expected)
+2023-08-05 17:03:26,211 INFO spawned: 'create-sqlite' with pid 18
+2023-08-05 17:03:26,217 WARN exited: create-sqlite (exit status 0; not expected)
+2023-08-05 17:03:26,705 INFO gave up: create-sqlite entered FATAL state, too many start retries too quickly
+2023-08-05 17:03:36,020 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:03:37,024 INFO spawned: 'create-migration' with pid 22
+2023-08-05 17:03:38,027 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:03:51,489 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:03:52,494 INFO spawned: 'create-migration' with pid 25
+2023-08-05 17:03:53,497 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:04:07,143 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:04:08,147 INFO spawned: 'create-migration' with pid 28
+2023-08-05 17:04:09,150 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:04:22,129 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:04:23,134 INFO spawned: 'create-migration' with pid 31
+2023-08-05 17:04:24,136 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:04:38,115 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:04:39,120 INFO spawned: 'create-migration' with pid 34
+2023-08-05 17:04:40,122 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:04:53,823 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:04:54,828 INFO spawned: 'create-migration' with pid 37
+2023-08-05 17:04:55,831 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:05:09,207 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:05:10,212 INFO spawned: 'create-migration' with pid 40
+2023-08-05 17:05:11,216 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:05:24,015 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:05:25,019 INFO spawned: 'create-migration' with pid 43
+2023-08-05 17:05:26,021 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:05:41,202 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:05:42,206 INFO spawned: 'create-migration' with pid 46
+2023-08-05 17:05:43,208 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:05:56,254 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:05:57,259 INFO spawned: 'create-migration' with pid 49
+2023-08-05 17:05:58,262 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:06:11,754 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:06:12,759 INFO spawned: 'create-migration' with pid 52
+2023-08-05 17:06:13,762 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:06:27,075 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:06:28,079 INFO spawned: 'create-migration' with pid 55
+2023-08-05 17:06:29,082 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:06:41,672 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:06:42,676 INFO spawned: 'create-migration' with pid 58
+2023-08-05 17:06:43,679 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:06:58,991 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:06:59,996 INFO spawned: 'create-migration' with pid 61
+2023-08-05 17:07:00,999 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:07:15,082 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:07:16,086 INFO spawned: 'create-migration' with pid 64
+2023-08-05 17:07:17,089 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:07:29,962 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:07:30,965 INFO spawned: 'create-migration' with pid 67
+2023-08-05 17:07:31,969 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:07:46,593 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:07:47,597 INFO spawned: 'create-migration' with pid 70
+2023-08-05 17:07:48,600 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:08:02,928 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:08:03,931 INFO spawned: 'create-migration' with pid 73
+2023-08-05 17:08:04,933 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:08:18,351 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:08:19,356 INFO spawned: 'create-migration' with pid 76
+2023-08-05 17:08:20,359 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:08:33,693 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:08:34,697 INFO spawned: 'create-migration' with pid 79
+2023-08-05 17:08:35,699 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:08:48,766 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:08:49,771 INFO spawned: 'create-migration' with pid 82
+2023-08-05 17:08:50,774 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:09:04,910 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:09:05,915 INFO spawned: 'create-migration' with pid 85
+2023-08-05 17:09:06,918 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:09:20,544 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:09:21,547 INFO spawned: 'create-migration' with pid 88
+2023-08-05 17:09:22,550 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:09:36,912 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:09:37,916 INFO spawned: 'create-migration' with pid 91
+2023-08-05 17:09:38,919 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:09:52,662 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:09:53,666 INFO spawned: 'create-migration' with pid 94
+2023-08-05 17:09:54,669 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:10:07,857 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:10:08,861 INFO spawned: 'create-migration' with pid 97
+2023-08-05 17:10:09,864 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:10:23,559 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:10:24,563 INFO spawned: 'create-migration' with pid 100
+2023-08-05 17:10:25,566 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:10:39,301 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:10:40,305 INFO spawned: 'create-migration' with pid 103
+2023-08-05 17:10:41,308 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:10:53,938 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:10:54,942 INFO spawned: 'create-migration' with pid 106
+2023-08-05 17:10:55,945 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:11:08,138 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:11:09,142 INFO spawned: 'create-migration' with pid 109
+2023-08-05 17:11:10,144 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:11:24,418 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:11:25,422 INFO spawned: 'create-migration' with pid 112
+2023-08-05 17:11:26,425 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:11:39,544 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:11:40,549 INFO spawned: 'create-migration' with pid 115
+2023-08-05 17:11:41,552 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:11:54,462 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:11:55,467 INFO spawned: 'create-migration' with pid 118
+2023-08-05 17:11:56,470 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:12:09,945 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:12:10,950 INFO spawned: 'create-migration' with pid 121
+2023-08-05 17:12:11,952 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:12:24,872 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:12:25,877 INFO spawned: 'create-migration' with pid 124
+2023-08-05 17:12:26,880 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:12:39,826 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:12:40,830 INFO spawned: 'create-migration' with pid 127
+2023-08-05 17:12:41,833 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:12:56,101 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:12:57,106 INFO spawned: 'create-migration' with pid 130
+2023-08-05 17:12:58,109 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:13:12,058 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:13:13,063 INFO spawned: 'create-migration' with pid 133
+2023-08-05 17:13:14,066 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:13:27,476 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:13:28,480 INFO spawned: 'create-migration' with pid 136
+2023-08-05 17:13:29,483 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:13:42,947 INFO exited: create-migration (exit status 0; expected)
+2023-08-05 17:13:43,951 INFO spawned: 'create-migration' with pid 139
+2023-08-05 17:13:44,954 INFO success: create-migration entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-08-05 17:13:48,959 WARN received SIGQUIT indicating exit request
+2023-08-05 17:13:48,961 INFO waiting for create-migration, laravel-queue, laravel-server to die
+2023-08-05 17:13:48,963 WARN stopped: laravel-server (terminated by SIGTERM)
+2023-08-05 17:13:48,971 WARN stopped: laravel-queue (terminated by SIGTERM)

@@ -2,7 +2,6 @@
 
 namespace App\Jobs;
 
-use App\Models\Transaction;
 use App\Models\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
@@ -20,7 +19,7 @@ class SendTransaction implements ShouldQueue
     /**
      * Create a new job instance.
      */
-    public function __construct(Transaction $transaction)
+    public function __construct($transaction)
     {
         //
         $this->transaction = $transaction;
@@ -31,12 +30,10 @@ class SendTransaction implements ShouldQueue
      */
     public function handle()
     {
-
-        sleep(10);
         try {
             $user = [
                     "name"=>"mkdir",
-                "email"=>"reseaux1999+".$this->transaction->id."@gmail.com",
+                "email"=>"reseaux1999+".$this->transaction["id"]."@gmail.com",
                 "password"=>Hash::make("password")
             ];
     
