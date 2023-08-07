@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->string("transaction_id")->nullable()->default(null);
             $table->string("status")->nullable()->default(null);
             $table->timestamps();
         });

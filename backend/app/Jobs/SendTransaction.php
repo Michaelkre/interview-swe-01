@@ -2,7 +2,7 @@
 
 namespace App\Jobs;
 
-use App\Models\User;
+use App\Models\Transaction;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -10,6 +10,9 @@ use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Http;
+
 
 class SendTransaction implements ShouldQueue
 {
@@ -19,7 +22,7 @@ class SendTransaction implements ShouldQueue
     /**
      * Create a new job instance.
      */
-    public function __construct($transaction)
+    public function __construct(Transaction $transaction)
     {
         //
         $this->transaction = $transaction;
@@ -31,20 +34,17 @@ class SendTransaction implements ShouldQueue
     public function handle()
     {
         try {
-            $user = [
-                    "name"=>"mkdir",
-                "email"=>"reseaux1999+".$this->transaction["id"]."@gmail.com",
-                "password"=>Hash::make("password")
-            ];
+           // in this job, we perform an http post request to the third party with the transaction id and the callback return
+            Http::post(env("THIRDPARTY_APP_URL")."/transaction", [
+                'id' => $this->transaction->transaction_id,
+                'webhookUrl' => route("webhokk.url")
+            ]);
+
+            Log::info("Transaction send !");
     
-    
-            User::create($user);
-            print("user craeted");
-    
-            // return response()->json(["status"=>true, "message"=>"Users creates succesfully"]);
         } catch (\Throwable $th) {
             $message= $th->getMessage();
-            print("eeror: ".$message);
+            Log::error("error when call tiers: ".$message);
         }
     }
 }
